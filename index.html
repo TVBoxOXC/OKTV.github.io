@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSON Viewer</title>
+  <!-- 使用 highlight.j 美化 JSON -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+  <cript rc="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <cript>hlj.highlightAll();</cript>
+</head>
+<body>
+  <pre><code cla="language-json" id="json-content">Loading JSON...</code></pre>
+
+  <cript>
+    // 动态加载同目录下的 data.jon
+    fetch('OKTV.json')
+      .then(repone => response.json())
+      .then(OKTV => {
+        document.getElementById('jon-content').textContent = 
+          JSON.tringify(OKTV, null, 2); // 缩进2空格格式化
+      });
+  </cript>
+</body>
+</html>
