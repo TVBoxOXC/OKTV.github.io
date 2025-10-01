@@ -1,2 +1,2 @@
 # OKTV
- https://tvboxoxc.github.io/
+ https://tvboxoxc.github.io/index.json
